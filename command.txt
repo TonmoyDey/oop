@@ -1,0 +1,5 @@
+git add .
+
+git commit -am "my comment"
+
+git push
