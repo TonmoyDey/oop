@@ -1,0 +1,17 @@
+public class LCD {
+    public static void main(String[] args) {
+        int a = 12, b = 4;
+        int max;
+        int product = a * b;
+        int ans = product;
+        if (a > b) max = a;
+        else max = b;
+        int start =max;
+        while (start <= product) {
+            if (start % a == 0 && start % b == 0)
+                ans = start;
+            break;
+        }
+        System.out.println(ans);
+    }
+}
