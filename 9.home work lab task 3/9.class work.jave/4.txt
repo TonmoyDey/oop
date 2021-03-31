@@ -1,0 +1,54 @@
+public class Box {
+    public double length,height,width;
+    public static double priceperunit=5.0;
+    public static double totalprice=0.0;
+    public void setLength(double length){
+     this.length=length;
+    }
+    public void setHeight(double height){
+        this.height=height;
+    }
+    public void setWidth(double width){
+        this.width = width;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public double getLength() {
+        return length;
+    }
+    public double getWidth(){
+        return width;
+    }
+    public double getpricebox(){
+         double price=priceperunit*(length+width+height);
+         totalprice=totalprice+price;
+        System.out.println("totalprice ="+totalprice);
+         return price;
+    }
+}
+public class Test {
+    public static void main(String[] args) {
+        Box b= new Box();
+        b.setHeight(2.0);
+        b.setLength(2.0);
+        b.setWidth(2.0);
+        System.out.println("Length ="+b.getLength());
+        System.out.println("Width ="+b.getWidth());
+        System.out.println("Height ="+b.getHeight());
+        System.out.println("price of the box ="+b.getpricebox());
+
+
+        Box b1= new Box();
+        b1.setHeight(3.0);
+        b1.setLength(3.0);
+        b1.setWidth(3.0);
+        System.out.println("Length ="+b1.getLength());
+        System.out.println("Width ="+b1.getWidth());
+        System.out.println("Height ="+b1.getHeight());
+        System.out.println("price of the box ="+b1.getpricebox());
+
+    }
+}
