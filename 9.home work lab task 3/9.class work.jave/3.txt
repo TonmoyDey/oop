@@ -1,0 +1,22 @@
+package com.company;
+
+import java.util.Scanner;
+public class Main {
+    public void describeyourself() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter name =");
+        String a = sc.nextLine();
+        System.out.println("Enter field of interest =");
+        String b = sc.nextLine();
+        System.out.println("Enter your age =");
+        int c= sc.nextInt();
+        System.out.println("Enter height =");
+        double d= sc.nextDouble();
+        System.out.println("Hey,my name is"+a+". I am "+c+" years old.I am "+d+" feet long. My field of interest are "+b+"");
+
+    }
+
+    public static void main(String[] args) {
+        Main b = new Main();
+        b.describeyourself();
+    }
