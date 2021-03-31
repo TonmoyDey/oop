@@ -1,0 +1,23 @@
+}package com.company;
+
+        import java.util.Scanner;
+public class Main {
+    public void stringDemoMethode() {
+        String s1 = "Hellow";
+        String s2 = "         hellow          ";
+        System.out.println("character at index 0 = " + s1.indexOf(0));
+        System.out.println("Result of two string comprasion :" + s1.compareTo(s2));
+        System.out.println("value of s1 before trim=" + s2);
+        System.out.println("value of s2 after trim " + s2.trim());
+        System.out.println("Upper case valu of s1 " + s1.toUpperCase());
+        System.out.println("index of e in s1 :" + s1.indexOf('e'));
+        System.out.println("length of s1:" + s1.length());
+        System.out.println("s1 equals to s2 :" + s1.equals(s2));
+
+    }
+
+    public static void main(String[] args) {
+        Main b = new Main();
+        b.stringDemoMethode();
+    }
+}
