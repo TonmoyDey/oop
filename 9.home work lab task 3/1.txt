@@ -1,0 +1,56 @@
+public class Account {
+    private String name;
+    private int id;
+    private  double balance;
+    private static String bankname = "lic bank";
+    static{}
+    public Account(String name,int id,double balance){
+        this. name=name;
+        this .id= id;
+        if(balance>0){
+            this.balance=balance;
+        }else{
+            System.out.println("balance can not be zero or negative");
+        }
+    }
+    public void showAccountdetails(){
+        System.out.println("User Name ="+this.name);
+        System.out.println("User Id ="+this.id);
+        System.out.println("User Balance ="+this.balance);
+        System.out.println("Bank name ="+bankname);
+
+    }
+    public double getbalance(){
+        return balance;
+    }
+    public void setCredit(double amount){
+        if(amount>0){
+            this.balance=this.balance+amount;
+        }else{
+            System.out.println("Credit amount can not be zero or negative");
+        }
+    }
+    public void setDebit(double amount){
+        if(amount>0){
+            this.balance=this.balance-amount;
+        }else{
+            System.out.println("Debit amount can not be zero or negative");
+        }
+    }
+
+}
+public class Test {
+    public static void main(String[] args) {
+        Account b = new Account("Tonmoy Dey",1235,7893.65);
+        System.out.println("Initial Balance and information ");
+        b.showAccountdetails();
+        System.out.println("Balnce and information after deposition");
+        b.setCredit(3456.97);
+        b.getbalance() ;
+        b.showAccountdetails();
+        System.out.println("Balance and information after withdrawing");
+        b.setDebit(5678.93);
+        b.getbalance();
+        b.showAccountdetails();
+    }
+}

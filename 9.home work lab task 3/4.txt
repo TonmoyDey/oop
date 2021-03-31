@@ -1,0 +1,33 @@
+public class Bookshop {
+    public String title,auther,id;
+    public Bookshop(String id){
+        this.id = id;
+    }
+    public void setTitle(String title){
+        this.title = title;
+    }
+    public void setAuther(String auther){
+        this.auther= auther;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getAuther() {
+        return auther;
+    }
+    public void detailofthebook(){
+        System.out.println("Book id ="+this.id);
+        System.out.println("Book auther ="+this.auther);
+        System.out.println("Book title ="+this.title);
+    }
+}
+public class Test {
+    public static void main(String[] args) {
+        Bookshop b = new Bookshop("1234");
+        b.setAuther("Willam brown");
+        b.setTitle("the dark night");
+        b.detailofthebook();
+    }
+}
